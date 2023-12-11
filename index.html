@@ -17,8 +17,20 @@
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            td {
-                @apply px-6;
+            a {
+                @apply text-purple-500 hover:text-purple-600 transition;
+            }
+            thead th {
+                @apply px-6 py-3;
+            }
+            tbody tr {
+                @apply odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600;
+            }
+            tbody tr td {
+                @apply px-6 py-1;
+            }
+            tbody tr :first-child {
+                @apply px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white;
             }
         }
   </style> 
@@ -31,856 +43,856 @@
                 <table class="relative w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="sticky top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3">Category</th>
-                            <th scope="col" class="px-6 py-3">Product Name</th>
-                            <th scope="col" class="px-6 py-3">Was price</th>
-                            <th scope="col" class="px-6 py-3">Deal price</th>
-                            <th scope="col" class="px-6 py-3">Deal %</th>
-                            <th scope="col" class="px-6 py-3">Price Start Date</th>
-                            <th scope="col" class="px-6 py-3">Price End Date</th>
-                            <th scope="col" class="px-6 py-3">URL</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Was price</th>
+                            <th scope="col">Deal price</th>
+                            <th scope="col">Deal %</th>
+                            <th scope="col">Price Start Date</th>
+                            <th scope="col">Price End Date</th>
+                            <th scope="col">URL</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">FURNITURE</th>
+                        <tr>
+                            <th scope="row">FURNITURE</th>
                             <td>Teamson Kids Littel Bella Butterfly Vanity with Stool</td>
                             <td>$119.99 </td>
                             <td>$65.88 </td>
                             <td>-45%</td>
                             <td>10/6/23</td>
                             <td>1/1/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/3790547752">https://www.walmart.com/ip/3790547752</a></td>
+                            <td><a href="https://www.walmart.com/ip/3790547752">https://www.walmart.com/ip/3790547752</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kids </th>
+                        <tr>
+                            <th scope="row">Kids </th>
                             <td>Athletic Works Boys Polar Fleece Set, Sizes 4-18 &amp; Husky</td>
                             <td>$34.96 </td>
                             <td>$20.00 </td>
                             <td>-43%</td>
                             <td>11/25/23</td>
                             <td>1/8/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/770730741">https://www.walmart.com/ip/770730741</a></td>
+                            <td><a href="https://www.walmart.com/ip/770730741">https://www.walmart.com/ip/770730741</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">COOK &amp; DINE</th>
+                        <tr>
+                            <th scope="row">COOK &amp; DINE</th>
                             <td>Ninja Blast 16 oz. Portable Blender with Leak Proof Lid and Easy Sip Spout, White, BC100WH</td>
                             <td>$49.88 </td>
                             <td>$44.88 </td>
                             <td>-10%</td>
                             <td>11/6/23</td>
                             <td>2/6/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1788056254">https://www.walmart.com/ip/1788056254</a></td>
+                            <td><a href="https://www.walmart.com/ip/1788056254">https://www.walmart.com/ip/1788056254</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">BED &amp; BATH</th>
+                        <tr>
+                            <th scope="row">BED &amp; BATH</th>
                             <td>Bedsure Faux Fur Cream Throw Blanket, Fluffy Blankets &amp; Throws Shaggy Faux Fur Blanket, 50x60 Inches</td>
                             <td>$50.75 </td>
                             <td>$17.99 </td>
                             <td>-65%</td>
                             <td>11/22/23</td>
                             <td>12/1/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2599779105">https://www.walmart.com/ip/2599779105</a></td>
+                            <td><a href="https://www.walmart.com/ip/2599779105">https://www.walmart.com/ip/2599779105</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">SPORTING GOODS</th>
+                        <tr>
+                            <th scope="row">SPORTING GOODS</th>
                             <td>Basketball Hoop Portable Basketball System with Adjustable Height with Big Backboard &amp; Large Base for Youth Adults Family Indoor Outdoor</td>
                             <td>$299.99 </td>
                             <td>$85.99 </td>
                             <td>-71%</td>
                             <td>12/2/23</td>
                             <td>12/8/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/903785227">https://www.walmart.com/ip/903785227</a></td>
+                            <td><a href="https://www.walmart.com/ip/903785227">https://www.walmart.com/ip/903785227</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">PATIO AND GARDEN</th>
+                        <tr>
+                            <th scope="row">PATIO AND GARDEN</th>
                             <td>KingChii 456 sq. in Wood Pellet Smoker &amp; Grill BBQ with Auto Temperature Controls, Folding Legs for Outdoor Patio RV (Rain Cover Included), Bronze</td>
                             <td>$500.00 </td>
                             <td>$247.98 </td>
                             <td>-50%</td>
                             <td>12/2/23</td>
                             <td>12/8/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/846132139">https://www.walmart.com/ip/846132139</a></td>
+                            <td><a href="https://www.walmart.com/ip/846132139">https://www.walmart.com/ip/846132139</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">TOYS</th>
+                        <tr>
+                            <th scope="row">TOYS</th>
                             <td>BEST LEARNING INNO PAD: Smart Fun Lessons -Toddlers  Learning Toy for Kids 2 -5  Year Play and Learn Alphabet and Numbers  Ideal Educational Tablet Toy</td>
                             <td>$37.99 </td>
                             <td>$25.99 </td>
                             <td>-32%</td>
                             <td>12/2/23</td>
                             <td>12/8/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/299812327">https://www.walmart.com/ip/299812327</a></td>
+                            <td><a href="https://www.walmart.com/ip/299812327">https://www.walmart.com/ip/299812327</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">CAMERAS AND SUPPLIES</th>
+                        <tr>
+                            <th scope="row">CAMERAS AND SUPPLIES</th>
                             <td>Seckton Digital Camera 44MP Vlogging Camera with 16x Digital Zoom, Portable Multifunctional Camera Gifts for 8-15 Year Old Kids Teens Adult Beginners(Black)</td>
                             <td>$49.99 </td>
                             <td>$39.60 </td>
                             <td>-21%</td>
                             <td>12/2/23</td>
                             <td>12/8/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2155685976">https://www.walmart.com/ip/2155685976</a></td>
+                            <td><a href="https://www.walmart.com/ip/2155685976">https://www.walmart.com/ip/2155685976</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">TOYS</th>
+                        <tr>
+                            <th scope="row">TOYS</th>
                             <td>Best Choice Products Set of 2 1/18 Scale RC Remote Control Transforming Robot Sports Car Toys w/ 1 Button Transformation</td>
                             <td>$36.99 </td>
                             <td>$14.99 </td>
                             <td>-59%</td>
                             <td>12/4/23</td>
                             <td>12/10/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/498726640">https://www.walmart.com/ip/498726640</a></td>
+                            <td><a href="https://www.walmart.com/ip/498726640">https://www.walmart.com/ip/498726640</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">BEDDING</th>
+                        <tr>
+                            <th scope="row">BEDDING</th>
                             <td>MARNUR Electric Blanket 72&quot; x 84&quot; Full Size Heated Blanket, Fast Heating, 4 Heating Levels, 10H Auto-off, Machine Washable - Linen</td>
                             <td>$89.99 </td>
                             <td>$39.99 </td>
                             <td>-56%</td>
                             <td>12/4/23</td>
                             <td>12/10/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/515400669">https://www.walmart.com/ip/515400669</a></td>
+                            <td><a href="https://www.walmart.com/ip/515400669">https://www.walmart.com/ip/515400669</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">BEDDING</th>
+                        <tr>
+                            <th scope="row">BEDDING</th>
                             <td>3 Inch Cool Gel Memory Foam Mattress Topper Queen Size Bed,Removable Soft Cover, Comfort Body Support &amp; Pressure Relief,10 Year Warranty</td>
                             <td>$189.90 </td>
                             <td>$99.99 </td>
                             <td>-47%</td>
                             <td>12/4/23</td>
                             <td>12/10/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/573142856">https://www.walmart.com/ip/573142856</a></td>
+                            <td><a href="https://www.walmart.com/ip/573142856">https://www.walmart.com/ip/573142856</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Baby &amp; Toddler </th>
+                        <tr>
+                            <th scope="row">Baby &amp; Toddler </th>
                             <td>Little Star Baby Girl 3Pk Sleep n Play, Size NB-9M</td>
                             <td>$16.94 </td>
                             <td>$7.00 </td>
                             <td>-59%</td>
                             <td>12/6/23</td>
                             <td>12/13/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/695744899">https://www.walmart.com/ip/695744899</a></td>
+                            <td><a href="https://www.walmart.com/ip/695744899">https://www.walmart.com/ip/695744899</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kids </th>
+                        <tr>
+                            <th scope="row">Kids </th>
                             <td>Weathertamer Girls Hooded Colorblock Winter Puffer Coat, Sizes 4-16</td>
                             <td>$34.98 </td>
                             <td>$20.00 </td>
                             <td>-43%</td>
                             <td>11/26/23</td>
                             <td>12/13/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2770768978">https://www.walmart.com/ip/2770768978</a></td>
+                            <td><a href="https://www.walmart.com/ip/2770768978">https://www.walmart.com/ip/2770768978</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">TOYS</th>
+                        <tr>
+                            <th scope="row">TOYS</th>
                             <td>Funcid 12V Kids Powered Ride on Truck Car with Parent Remote Control, Bluetooth Music, Spring Suspension, LED Lights - Pink</td>
                             <td>$259.99 </td>
                             <td>$149.99 </td>
                             <td>-42%</td>
                             <td>12/7/23</td>
                             <td>12/13/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1896740405">https://www.walmart.com/ip/1896740405</a></td>
+                            <td><a href="https://www.walmart.com/ip/1896740405">https://www.walmart.com/ip/1896740405</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Baby &amp; Toddler </th>
+                        <tr>
+                            <th scope="row">Baby &amp; Toddler </th>
                             <td>PatPat Baby / Toddler Stylish 3D Ear Print Solid Hooded Coat</td>
                             <td>$28.99 </td>
                             <td>$17.24 </td>
                             <td>-41%</td>
                             <td>12/6/23</td>
                             <td>12/13/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/372172907">https://www.walmart.com/ip/372172907</a></td>
+                            <td><a href="https://www.walmart.com/ip/372172907">https://www.walmart.com/ip/372172907</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">HARDWARE AND TOOLS</th>
+                        <tr>
+                            <th scope="row">HARDWARE AND TOOLS</th>
                             <td>Costway 1500W Electric Oil Filled Radiator Space Heater 5.7 Fin Thermostat Room Radiant</td>
                             <td>$108.00 </td>
                             <td>$63.99 </td>
                             <td>-41%</td>
                             <td>12/7/23</td>
                             <td>12/13/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/110554122">https://www.walmart.com/ip/110554122</a></td>
+                            <td><a href="https://www.walmart.com/ip/110554122">https://www.walmart.com/ip/110554122</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Shoes </th>
+                        <tr>
+                            <th scope="row">Shoes </th>
                             <td>Muk Luks Women&#39;s Slope Natalie Boots, Sizes 6-11</td>
                             <td>$89.99 </td>
                             <td>$19.99 </td>
                             <td>-78%</td>
                             <td>12/6/23</td>
                             <td>12/18/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1017711081">https://www.walmart.com/ip/1017711081</a></td>
+                            <td><a href="https://www.walmart.com/ip/1017711081">https://www.walmart.com/ip/1017711081</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Shoes </th>
+                        <tr>
+                            <th scope="row">Shoes </th>
                             <td>Portland Boot Company Women&#39;s Faux Shearling Winter Boots</td>
                             <td>$60.00 </td>
                             <td>$17.99 </td>
                             <td>-70%</td>
                             <td>12/6/23</td>
                             <td>12/18/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/3892406226">https://www.walmart.com/ip/3892406226</a></td>
+                            <td><a href="https://www.walmart.com/ip/3892406226">https://www.walmart.com/ip/3892406226</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Shoes </th>
+                        <tr>
+                            <th scope="row">Shoes </th>
                             <td>Portland Boot Company Women&#39;s Puff Winter Boots</td>
                             <td>$60.00 </td>
                             <td>$19.99 </td>
                             <td>-67%</td>
                             <td>12/6/23</td>
                             <td>12/18/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1792737102">https://www.walmart.com/ip/1792737102</a></td>
+                            <td><a href="https://www.walmart.com/ip/1792737102">https://www.walmart.com/ip/1792737102</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Shoes </th>
+                        <tr>
+                            <th scope="row">Shoes </th>
                             <td>Portland Boot Company Women&#39;s Cozy Shearling Bootie</td>
                             <td>$45.00 </td>
                             <td>$18.00 </td>
                             <td>-60%</td>
                             <td>12/6/23</td>
                             <td>12/18/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/3548854611">https://www.walmart.com/ip/3548854611</a></td>
+                            <td><a href="https://www.walmart.com/ip/3548854611">https://www.walmart.com/ip/3548854611</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Toys </th>
+                        <tr>
+                            <th scope="row">Toys </th>
                             <td>Cocomelon Wheels on the Bus Wooden Activity Table, Recycled Wood, Officially Licensed Kids Toys for Ages 18 Month and up, Gifts and Presents</td>
                             <td>$107.11 </td>
                             <td>$25.00 </td>
                             <td>-77%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/953316455">https://www.walmart.com/ip/953316455</a></td>
+                            <td><a href="https://www.walmart.com/ip/953316455">https://www.walmart.com/ip/953316455</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">HOME DECOR</th>
+                        <tr>
+                            <th scope="row">HOME DECOR</th>
                             <td>Scented Candles Gift Set, 6 Pack Jar Aromatherapy Candle for Women, Each Candle Burns for 15 h</td>
                             <td>$49.99 </td>
                             <td>$15.99 </td>
                             <td>-68%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1418579748">https://www.walmart.com/ip/1418579748</a></td>
+                            <td><a href="https://www.walmart.com/ip/1418579748">https://www.walmart.com/ip/1418579748</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">HOME DECOR</th>
+                        <tr>
+                            <th scope="row">HOME DECOR</th>
                             <td>DAYBETTER Led Strip Lights,100ft Light Strips with App Control Remote,24V 5050 RGB Led Lights for Bedroom, Music Sync Color Changing Lights for Room Party</td>
                             <td>$39.99 </td>
                             <td>$12.99 </td>
                             <td>-68%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/789645906">https://www.walmart.com/ip/789645906</a></td>
+                            <td><a href="https://www.walmart.com/ip/789645906">https://www.walmart.com/ip/789645906</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kids </th>
+                        <tr>
+                            <th scope="row">Kids </th>
                             <td>iXtreme Boys Hooded Colorblock Puffer Winter Coat with Knit Hat, Sizes 8-18</td>
                             <td>$34.98 </td>
                             <td>$14.00 </td>
                             <td>-60%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/5080277065">https://www.walmart.com/ip/5080277065</a></td>
+                            <td><a href="https://www.walmart.com/ip/5080277065">https://www.walmart.com/ip/5080277065</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Kids </th>
+                        <tr>
+                            <th scope="row">Kids </th>
                             <td>iXtreme Boys Hooded Colorblock Puffer Winter Coat, Sizes 8-18</td>
                             <td>$34.98 </td>
                             <td>$14.00 </td>
                             <td>-60%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/5057371285">https://www.walmart.com/ip/5057371285</a></td>
+                            <td><a href="https://www.walmart.com/ip/5057371285">https://www.walmart.com/ip/5057371285</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Intimates </th>
+                        <tr>
+                            <th scope="row">Intimates </th>
                             <td>PatPat Christmas Pajamas Family Christmas Pajamas for Women Men Kids,Tree and Bear Patterned Onesies Flapjack Pajamas (Flame Resistant√Ø¬º‚Ä∞</td>
                             <td>$32.99 </td>
                             <td>$14.99 </td>
                             <td>-55%</td>
                             <td>12/7/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/995415578">https://www.walmart.com/ip/995415578</a></td>
+                            <td><a href="https://www.walmart.com/ip/995415578">https://www.walmart.com/ip/995415578</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Toys </th>
+                        <tr>
+                            <th scope="row">Toys </th>
                             <td>Melissa &amp; Doug Deluxe Kitchen Collection Cooking &amp; Play Food Set, 58 Pieces</td>
                             <td>$30.56 </td>
                             <td>$14.97 </td>
                             <td>-51%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/568571317">https://www.walmart.com/ip/568571317</a></td>
+                            <td><a href="https://www.walmart.com/ip/568571317">https://www.walmart.com/ip/568571317</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Intimates </th>
+                        <tr>
+                            <th scope="row">Intimates </th>
                             <td>Baozhu Christmas Family Matching Deer Striped Pajamas Set Adult Kid Baby Jammies</td>
                             <td>$22.99 </td>
                             <td>$13.00 </td>
                             <td>-43%</td>
                             <td>12/7/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1200455565">https://www.walmart.com/ip/1200455565</a></td>
+                            <td><a href="https://www.walmart.com/ip/1200455565">https://www.walmart.com/ip/1200455565</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Toys </th>
+                        <tr>
+                            <th scope="row">Toys </th>
                             <td>LEGO City Stuntz Smashing Chimpanzee Stunt Loop 60338 with Flywheel Toy motorcycle, Ramp, Chimp Prop and 3 Minifigures, Gift for Kids Aged 7 Plus</td>
                             <td>$58.99 </td>
                             <td>$35.00 </td>
                             <td>-41%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/782620858">https://www.walmart.com/ip/782620858</a></td>
+                            <td><a href="https://www.walmart.com/ip/782620858">https://www.walmart.com/ip/782620858</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">HOME DECOR</th>
+                        <tr>
+                            <th scope="row">HOME DECOR</th>
                             <td>DAYBETTER 50ft Bluetooth LED Strip Lights,Music Sync 5050 LED Light Strip RGB with Remote Control,Timer Schedule,Color Changing Led Lights for Bedroom(APP+Remote +Mic)</td>
                             <td>$16.99 </td>
                             <td>$11.99 </td>
                             <td>-29%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/514452708">https://www.walmart.com/ip/514452708</a></td>
+                            <td><a href="https://www.walmart.com/ip/514452708">https://www.walmart.com/ip/514452708</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Toys </th>
+                        <tr>
+                            <th scope="row">Toys </th>
                             <td>Barbie DreamCamper Vehicle Playset with 60 Accessories Including Pool and 30-inch Slide</td>
                             <td>$125.35 </td>
                             <td>$89.00 </td>
                             <td>-29%</td>
                             <td>12/6/23</td>
                             <td>12/20/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/332647481">https://www.walmart.com/ip/332647481</a></td>
+                            <td><a href="https://www.walmart.com/ip/332647481">https://www.walmart.com/ip/332647481</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Accessories </th>
+                        <tr>
+                            <th scope="row">Accessories </th>
                             <td>MICHAEL KORS 35S2GNMC5B Carmen Small Logo Smartphone Crossbody Bag Black</td>
                             <td>$348.00 </td>
                             <td>$64.94 </td>
                             <td>-81%</td>
                             <td>12/6/23</td>
                             <td>12/21/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1275282609">https://www.walmart.com/ip/1275282609</a></td>
+                            <td><a href="https://www.walmart.com/ip/1275282609">https://www.walmart.com/ip/1275282609</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">FURNITURE</th>
+                        <tr>
+                            <th scope="row">FURNITURE</th>
                             <td>Neo Chair MB-5 Ergonomic Mid Back Adjustable Mesh Home Office Computer Desk Chair, Black</td>
                             <td>$84.98 </td>
                             <td>$44.98 </td>
                             <td>-47%</td>
                             <td>12/6/23</td>
                             <td>12/21/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/780391490">https://www.walmart.com/ip/780391490</a></td>
+                            <td><a href="https://www.walmart.com/ip/780391490">https://www.walmart.com/ip/780391490</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">FURNITURE</th>
+                        <tr>
+                            <th scope="row">FURNITURE</th>
                             <td>Neo Chair Mid Back Ergonomic Executive PU Leather Chair with Padded Flip-up Arms, Jet Black</td>
                             <td>$129.98 </td>
                             <td>$69.98 </td>
                             <td>-46%</td>
                             <td>12/6/23</td>
                             <td>12/21/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1736787638">https://www.walmart.com/ip/1736787638</a></td>
+                            <td><a href="https://www.walmart.com/ip/1736787638">https://www.walmart.com/ip/1736787638</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">FURNITURE</th>
+                        <tr>
+                            <th scope="row">FURNITURE</th>
                             <td>Emma + Oliver 5 Piece Black Folding Game Room Card Table and Chair Set</td>
                             <td>$186.00 </td>
                             <td>$109.99 </td>
                             <td>-41%</td>
                             <td>12/6/23</td>
                             <td>12/21/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/416809812">https://www.walmart.com/ip/416809812</a></td>
+                            <td><a href="https://www.walmart.com/ip/416809812">https://www.walmart.com/ip/416809812</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">FURNITURE</th>
+                        <tr>
+                            <th scope="row">FURNITURE</th>
                             <td>X Rocker Maverick Fabric Gaming Chair, Green</td>
                             <td>$114.00 </td>
                             <td>$89.00 </td>
                             <td>-22%</td>
                             <td>12/6/23</td>
                             <td>12/21/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1263848006">https://www.walmart.com/ip/1263848006</a></td>
+                            <td><a href="https://www.walmart.com/ip/1263848006">https://www.walmart.com/ip/1263848006</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Men&#39;s</th>
+                        <tr>
+                            <th scope="row">Men&#39;s</th>
                             <td>Genuine Dickies Men&#39;s Relaxed Fit Performance Polyester Tee Shirt</td>
                             <td>$24.99 </td>
                             <td>$8.99 </td>
                             <td>-64%</td>
                             <td>11/22/23</td>
                             <td>12/22/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/43199708">https://www.walmart.com/ip/43199708</a></td>
+                            <td><a href="https://www.walmart.com/ip/43199708">https://www.walmart.com/ip/43199708</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>6.5 ft Non-Lit Jackson Spruce Artificial Christmas Tree</td>
                             <td>$49.00 </td>
                             <td>$34.00 </td>
                             <td>-31%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1518919533">https://www.walmart.com/ip/1518919533</a></td>
+                            <td><a href="https://www.walmart.com/ip/1518919533">https://www.walmart.com/ip/1518919533</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>Non-Lit White Jackson Spruce Artificial Christmas Tree </td>
                             <td>$49.00 </td>
                             <td>$34.00 </td>
                             <td>-31%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1358562310">https://www.walmart.com/ip/1358562310</a></td>
+                            <td><a href="https://www.walmart.com/ip/1358562310">https://www.walmart.com/ip/1358562310</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>7.5 ft Pre-Lit Ozark Fir Cashmere Artificial Christmas Tree with 280 LED Multi-Color Lights</td>
                             <td>$149.00 </td>
                             <td>$109.00 </td>
                             <td>-27%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1536067443">https://www.walmart.com/ip/1536067443</a></td>
+                            <td><a href="https://www.walmart.com/ip/1536067443">https://www.walmart.com/ip/1536067443</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">COOK &amp; DINE</th>
+                        <tr>
+                            <th scope="row">COOK &amp; DINE</th>
                             <td>Cirkul 22 oz Plastic Water Bottle Starter Kit with Blue Lid and 2 Flavor Cartridges (Fruit Punch &amp; Mixed Be</td>
                             <td>$19.98 </td>
                             <td>$14.98 </td>
                             <td>-25%</td>
                             <td>12/3/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/730628142">https://www.walmart.com/ip/730628142</a></td>
+                            <td><a href="https://www.walmart.com/ip/730628142">https://www.walmart.com/ip/730628142</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>Airblown Inflatables Nightmare Before CHristmas Giant 8.5 ft Jack Skellington</td>
                             <td>$99.00 </td>
                             <td>$74.00 </td>
                             <td>-25%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2107701697">https://www.walmart.com/ip/2107701697</a></td>
+                            <td><a href="https://www.walmart.com/ip/2107701697">https://www.walmart.com/ip/2107701697</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>10 ft Inflatable Christmas Tree with Programmed LIghts</td>
                             <td>$99.00 </td>
                             <td>$74.00 </td>
                             <td>-25%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1845675328">https://www.walmart.com/ip/1845675328</a></td>
+                            <td><a href="https://www.walmart.com/ip/1845675328">https://www.walmart.com/ip/1845675328</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>6.5 ft Arlington Tree with 300 Clear Incandescent Mini Lights</td>
                             <td>$79.00 </td>
                             <td>$59.00 </td>
                             <td>-25%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1072266863">https://www.walmart.com/ip/1072266863</a></td>
+                            <td><a href="https://www.walmart.com/ip/1072266863">https://www.walmart.com/ip/1072266863</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>Non-Lit Donner FIr Artificial Christmas Tree</td>
                             <td>$99.00 </td>
                             <td>$74.00 </td>
                             <td>-25%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2680108173">https://www.walmart.com/ip/2680108173</a></td>
+                            <td><a href="https://www.walmart.com/ip/2680108173">https://www.walmart.com/ip/2680108173</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>7 ft Pre-Lit Duncan Fir Artificial Christmas Tree</td>
                             <td>$99.00 </td>
                             <td>$74.00 </td>
                             <td>-25%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/3659052644">https://www.walmart.com/ip/3659052644</a></td>
+                            <td><a href="https://www.walmart.com/ip/3659052644">https://www.walmart.com/ip/3659052644</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>Disney Holiday Classics Minnie Mouse 19 in Plushie</td>
                             <td>$9.00 </td>
                             <td>$12.97 </td>
                             <td>44%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2433290844">https://www.walmart.com/ip/2433290844</a></td>
+                            <td><a href="https://www.walmart.com/ip/2433290844">https://www.walmart.com/ip/2433290844</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal</th>
+                        <tr>
+                            <th scope="row">Seasonal</th>
                             <td>Disney Holiday Classics Mickey Mouse 19 in Plushie </td>
                             <td>$9.00 </td>
                             <td>$12.97 </td>
                             <td>44%</td>
                             <td>12/5/23</td>
                             <td>12/24/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1143473546">https://www.walmart.com/ip/1143473546</a></td>
+                            <td><a href="https://www.walmart.com/ip/1143473546">https://www.walmart.com/ip/1143473546</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Women&#39;s</th>
+                        <tr>
+                            <th scope="row">Women&#39;s</th>
                             <td>Jollidays Women&#39;s Spec-tacular Llama Ugly Christmas Sweater</td>
                             <td>$44.99 </td>
                             <td>$24.99 </td>
                             <td>-44%</td>
                             <td>12/9/23</td>
                             <td>12/25/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/5078233443">https://www.walmart.com/ip/5078233443</a></td>
+                            <td><a href="https://www.walmart.com/ip/5078233443">https://www.walmart.com/ip/5078233443</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Home</th>
+                        <tr>
+                            <th scope="row">Home</th>
                             <td>XBOX Series X Replica 8 Can Mini Fridge (Thermoelectric Cooler)</td>
                             <td>$126.21 </td>
                             <td>$39.97 </td>
                             <td>-68%</td>
                             <td>12/6/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/414202579">https://www.walmart.com/ip/414202579</a></td>
+                            <td><a href="https://www.walmart.com/ip/414202579">https://www.walmart.com/ip/414202579</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Home</th>
+                        <tr>
+                            <th scope="row">Home</th>
                             <td>Minecraft Green Creeper 9 Can Mini Fridge 6.7L 1 Door Ambient Lighting 10.4 in H 10 in W 10 in D</td>
                             <td>$98.00 </td>
                             <td>$32.48 </td>
                             <td>-67%</td>
                             <td>12/6/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1443188422">https://www.walmart.com/ip/1443188422</a></td>
+                            <td><a href="https://www.walmart.com/ip/1443188422">https://www.walmart.com/ip/1443188422</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Home</th>
+                        <tr>
+                            <th scope="row">Home</th>
                             <td>iHome AutoVac Nova S1 Robot Vacuum with LIDAR Navigation, 150 Min Runtime, 2700pa Suction</td>
                             <td>$249.99 </td>
                             <td>$99.00 </td>
                             <td>-60%</td>
                             <td>12/6/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2729340640">https://www.walmart.com/ip/2729340640</a></td>
+                            <td><a href="https://www.walmart.com/ip/2729340640">https://www.walmart.com/ip/2729340640</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">BED &amp; BATH</th>
+                        <tr>
+                            <th scope="row">BED &amp; BATH</th>
                             <td>Tranquility Temperature Balancing 12lb Weighted Blanket</td>
                             <td>$29.99 </td>
                             <td>$15.98 </td>
                             <td>-47%</td>
                             <td>11/1/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/936824557">https://www.walmart.com/ip/936824557</a></td>
+                            <td><a href="https://www.walmart.com/ip/936824557">https://www.walmart.com/ip/936824557</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">CONSUMABLES</th>
+                        <tr>
+                            <th scope="row">CONSUMABLES</th>
                             <td>AncestryDNA + Traits: Genetic + Traits Test, Testing Kit with 35+ Genetic Traits, DNA Test Kit</td>
                             <td>$119.00 </td>
                             <td>$69.00 </td>
                             <td>-42%</td>
                             <td>11/28/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/671206219">https://www.walmart.com/ip/671206219</a></td>
+                            <td><a href="https://www.walmart.com/ip/671206219">https://www.walmart.com/ip/671206219</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">CONSUMABLES</th>
+                        <tr>
+                            <th scope="row">CONSUMABLES</th>
                             <td>AncestryDNA Genetic Test Kit: Personalized Genetic Results, DNA Ethnicity Test, Complete DNA Test</td>
                             <td>$99.00 </td>
                             <td>$59.00 </td>
                             <td>-40%</td>
                             <td>11/28/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/442487021">https://www.walmart.com/ip/442487021</a></td>
+                            <td><a href="https://www.walmart.com/ip/442487021">https://www.walmart.com/ip/442487021</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">FURNITURE</th>
+                        <tr>
+                            <th scope="row">FURNITURE</th>
                             <td>Queen Mattress, Madinog 12&quot; Hybrid Mattress,Innerspring and Gel Memory Foam</td>
                             <td>$299.99 </td>
                             <td>$183.99 </td>
                             <td>-39%</td>
                             <td>12/6/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1719736562">https://www.walmart.com/ip/1719736562</a></td>
+                            <td><a href="https://www.walmart.com/ip/1719736562">https://www.walmart.com/ip/1719736562</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Media &amp; Gaming</th>
+                        <tr>
+                            <th scope="row">Media &amp; Gaming</th>
                             <td>Xbox Series X Diablo IV Bundle </td>
                             <td>$559.99 </td>
                             <td>$349.00 </td>
                             <td>-38%</td>
                             <td>12/1/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2090305270">https://www.walmart.com/ip/2090305270</a></td>
+                            <td><a href="https://www.walmart.com/ip/2090305270">https://www.walmart.com/ip/2090305270</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">COOK &amp; DINE</th>
+                        <tr>
+                            <th scope="row">COOK &amp; DINE</th>
                             <td>KitchenAid Deluxe 4.5 Quart Tilt-Head Stand Mixer - KSM97</td>
                             <td>$399.99 </td>
                             <td>$259.00 </td>
                             <td>-35%</td>
                             <td>9/18/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/351691465">https://www.walmart.com/ip/351691465</a></td>
+                            <td><a href="https://www.walmart.com/ip/351691465">https://www.walmart.com/ip/351691465</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Media &amp; Gaming</th>
+                        <tr>
+                            <th scope="row">Media &amp; Gaming</th>
                             <td>Xbox Series X</td>
                             <td>$499.00 </td>
                             <td>$349.00 </td>
                             <td>-30%</td>
                             <td>12/1/23</td>
                             <td>12/31/23</td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/443574645">https://www.walmart.com/ip/443574645</a></td>
+                            <td><a href="https://www.walmart.com/ip/443574645">https://www.walmart.com/ip/443574645</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Automotive</th>
+                        <tr>
+                            <th scope="row">Automotive</th>
                             <td>Aqua Joe 2-in-1 All-Purpose Hose-Powered Adjustable Foam Cannon Spray Gun Kit with Bristle Brush &amp; Detailer Sponge Attachments - Blue</td>
                             <td>$49.99 </td>
                             <td>$9.97 </td>
                             <td>-80%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1730595533">https://www.walmart.com/ip/1730595533</a></td>
+                            <td><a href="https://www.walmart.com/ip/1730595533">https://www.walmart.com/ip/1730595533</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">ELECTRONICS</th>
+                        <tr>
+                            <th scope="row">ELECTRONICS</th>
                             <td>ETEPEHI 3 in 1 Charging Station for iPhone, Wireless Charger for iPhone 15 14 13 12 11 X Pro Max &amp; for Apple Watch - Charging Stand Dock for AirPods</td>
                             <td>$59.99 </td>
                             <td>$19.99 </td>
                             <td>-67%</td>
                             <td>12/6/23</td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/838946660">https://www.walmart.com/ip/838946660</a></td>
+                            <td><a href="https://www.walmart.com/ip/838946660">https://www.walmart.com/ip/838946660</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Automotive</th>
+                        <tr>
+                            <th scope="row">Automotive</th>
                             <td>Power Acoustik CPAA-70D Apple CarPlay/Android Auto Receiver with 7&quot; Touchscreen and Bluetooth, Double DIN</td>
                             <td>$126.00 </td>
                             <td>$55.00 </td>
                             <td>-56%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/328061491">https://www.walmart.com/ip/328061491</a></td>
+                            <td><a href="https://www.walmart.com/ip/328061491">https://www.walmart.com/ip/328061491</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">School &amp; Office Supplies</th>
+                        <tr>
+                            <th scope="row">School &amp; Office Supplies</th>
                             <td>Justice Studio Art Desk W/ Accessories, Multicolor, Tween, Teen, Girls, Crafts Misc.</td>
                             <td>$21.28 </td>
                             <td>$9.97 </td>
                             <td>-53%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/669739926">https://www.walmart.com/ip/669739926</a></td>
+                            <td><a href="https://www.walmart.com/ip/669739926">https://www.walmart.com/ip/669739926</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Toys </th>
+                        <tr>
+                            <th scope="row">Toys </th>
                             <td>Play-Doh 6 Variety Texture Pack Scented Slime Kit For Boys and Girls</td>
                             <td>$15.99 </td>
                             <td>$7.99 </td>
                             <td>-50%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/512295541">https://www.walmart.com/ip/512295541</a></td>
+                            <td><a href="https://www.walmart.com/ip/512295541">https://www.walmart.com/ip/512295541</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Patio &amp; Garden</th>
+                        <tr>
+                            <th scope="row">Patio &amp; Garden</th>
                             <td>Blackstone 25-Piece Griddle Accessory Set</td>
                             <td>$79.99 </td>
                             <td>$39.97 </td>
                             <td>-50%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1141803431">https://www.walmart.com/ip/1141803431</a></td>
+                            <td><a href="https://www.walmart.com/ip/1141803431">https://www.walmart.com/ip/1141803431</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sports &amp; Outdoors</th>
+                        <tr>
+                            <th scope="row">Sports &amp; Outdoors</th>
                             <td>Barrington 10-Player Poker Table, No Assembly Required</td>
                             <td>$298.99 </td>
                             <td>$149.00 </td>
                             <td>-50%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/55465427">https://www.walmart.com/ip/55465427</a></td>
+                            <td><a href="https://www.walmart.com/ip/55465427">https://www.walmart.com/ip/55465427</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Toys</th>
+                        <tr>
+                            <th scope="row">Toys</th>
                             <td>Disney‚Äôs Wish Asha of Rosas Posable 11 inch Fashion Doll and Accessories</td>
                             <td>$13.97 </td>
                             <td>$7.99 </td>
                             <td>-43%</td>
                             <td>10/2/23</td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2508260410">https://www.walmart.com/ip/2508260410</a></td>
+                            <td><a href="https://www.walmart.com/ip/2508260410">https://www.walmart.com/ip/2508260410</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sports &amp; Outdoors</th>
+                        <tr>
+                            <th scope="row">Sports &amp; Outdoors</th>
                             <td>Barrington 10-Player Poker Table with In-laid LED Lights, Brown and Black</td>
                             <td>$299.00 </td>
                             <td>$169.00 </td>
                             <td>-43%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/3963393753">https://www.walmart.com/ip/3963393753</a></td>
+                            <td><a href="https://www.walmart.com/ip/3963393753">https://www.walmart.com/ip/3963393753</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Automotive</th>
+                        <tr>
+                            <th scope="row">Automotive</th>
                             <td>Cargoloc 52&quot; Rooftop Crossbars</td>
                             <td>$90.85 </td>
                             <td>$53.58 </td>
                             <td>-41%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/891197275">https://www.walmart.com/ip/891197275</a></td>
+                            <td><a href="https://www.walmart.com/ip/891197275">https://www.walmart.com/ip/891197275</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">School &amp; Office Supplies</th>
+                        <tr>
+                            <th scope="row">School &amp; Office Supplies</th>
                             <td>Cra-Z-Art Disney Encanto Ultimate Coloring Set, Children Ages 4 and up</td>
                             <td>$24.97 </td>
                             <td>$15.00 </td>
                             <td>-40%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/172158624">https://www.walmart.com/ip/172158624</a></td>
+                            <td><a href="https://www.walmart.com/ip/172158624">https://www.walmart.com/ip/172158624</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Automotive</th>
+                        <tr>
+                            <th scope="row">Automotive</th>
                             <td>Power Acoustik Car Stereo Combo | Car Play/Android Auto Receiver &amp; (4) 6.5&quot; Speakers | 7&quot; HD LCD with Capacitive Touchscreen &amp; Bluetooth | Double Din | CPAAM7-S2</td>
                             <td>$150.59 </td>
                             <td>$99.97 </td>
                             <td>-34%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/298459062">https://www.walmart.com/ip/298459062</a></td>
+                            <td><a href="https://www.walmart.com/ip/298459062">https://www.walmart.com/ip/298459062</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Home Improvement</th>
+                        <tr>
+                            <th scope="row">Home Improvement</th>
                             <td>Pure Guardian 14-Hour 0.21 Gallon Cool Mist Ultrasonic Humidifier with Nightlight, H910BL</td>
                             <td>$34.49 </td>
                             <td>$23.14 </td>
                             <td>-33%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/46092414">https://www.walmart.com/ip/46092414</a></td>
+                            <td><a href="https://www.walmart.com/ip/46092414">https://www.walmart.com/ip/46092414</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Sports &amp; Outdoors</th>
+                        <tr>
+                            <th scope="row">Sports &amp; Outdoors</th>
                             <td>Bounce Pro 14ft Trampoline with Flash Light Zone</td>
                             <td>$279.00 </td>
                             <td>$199.00 </td>
                             <td>-29%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/245095654">https://www.walmart.com/ip/245095654</a></td>
+                            <td><a href="https://www.walmart.com/ip/245095654">https://www.walmart.com/ip/245095654</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal </th>
+                        <tr>
+                            <th scope="row">Seasonal </th>
                             <td>6.5 ft Pre-Lit Pink Flocked Pine Artificial Christmas Tree, 200 Clear Lights, Pink, by Holiday Time</td>
                             <td>$75.00 </td>
                             <td>$55.00 </td>
                             <td>-27%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/3573258958">https://www.walmart.com/ip/3573258958</a></td>
+                            <td><a href="https://www.walmart.com/ip/3573258958">https://www.walmart.com/ip/3573258958</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Computers</th>
+                        <tr>
+                            <th scope="row">Computers</th>
                             <td>ASUS ROG Strix G17 (2023) 17.3‚Äù QHD 240Hz Gaming Laptop, Ryzen 9-7845HX, NVIDIA GeForce RTX 4060, 16GB DDR5 RAM, 1TB SSD, Windows 11, G713PV-WS94</td>
                             <td>$1,859.00 </td>
                             <td>$1,399.00 </td>
                             <td>-25%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2103957626">https://www.walmart.com/ip/2103957626</a></td>
+                            <td><a href="https://www.walmart.com/ip/2103957626">https://www.walmart.com/ip/2103957626</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Toys </th>
+                        <tr>
+                            <th scope="row">Toys </th>
                             <td>Barbie Chelsea Doll, Small Doll Wearing Removable Heart-Print Dress with Brunette Hair &amp; Brown Eyes</td>
                             <td>$5.59 </td>
                             <td>$4.35 </td>
                             <td>-22%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2222378940">https://www.walmart.com/ip/2222378940</a></td>
+                            <td><a href="https://www.walmart.com/ip/2222378940">https://www.walmart.com/ip/2222378940</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal </th>
+                        <tr>
+                            <th scope="row">Seasonal </th>
                             <td>Christmas Decorative Sock Christmas Sock Gift Bag Lovely Cat Claw Stocking Bag</td>
                             <td>$8.99 </td>
                             <td>$7.06 </td>
                             <td>-21%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/1363349399">https://www.walmart.com/ip/1363349399</a></td>
+                            <td><a href="https://www.walmart.com/ip/1363349399">https://www.walmart.com/ip/1363349399</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">ELECTRONICS</th>
+                        <tr>
+                            <th scope="row">ELECTRONICS</th>
                             <td>Fitbit Inspire 2 Fitness Tracker - Black</td>
                             <td>$83.42 </td>
                             <td>$67.50 </td>
                             <td>-19%</td>
                             <td>12/6/23</td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/782866746">https://www.walmart.com/ip/782866746</a></td>
+                            <td><a href="https://www.walmart.com/ip/782866746">https://www.walmart.com/ip/782866746</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Media &amp; Gaming</th>
+                        <tr>
+                            <th scope="row">Media &amp; Gaming</th>
                             <td>PlayStation 5 Disc Console Slim - Call of Duty Modern Warfare III Bundle</td>
                             <td>$559.00 </td>
                             <td>$499.00 </td>
                             <td>-11%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/5066049737">https://www.walmart.com/ip/5066049737</a></td>
+                            <td><a href="https://www.walmart.com/ip/5066049737">https://www.walmart.com/ip/5066049737</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Media &amp; Gaming</th>
+                        <tr>
+                            <th scope="row">Media &amp; Gaming</th>
                             <td>PlayStation 5 Disc Console Slim - Marvel&#39;s Spider-Man 2 Bundle</td>
                             <td>$559.99 </td>
                             <td>$499.00 </td>
                             <td>-11%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/5113183758">https://www.walmart.com/ip/5113183758</a></td>
+                            <td><a href="https://www.walmart.com/ip/5113183758">https://www.walmart.com/ip/5113183758</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal </th>
+                        <tr>
+                            <th scope="row">Seasonal </th>
                             <td>Holiday Time 30&quot; Christmas Wrapping Paper, Script, Snowmen and Plaid with Cutlines (120 Sq. ft., 4-Roll)</td>
                             <td>$5.48 </td>
                             <td>$5.48 </td>
                             <td>0%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/3794684910">https://www.walmart.com/ip/3794684910</a></td>
+                            <td><a href="https://www.walmart.com/ip/3794684910">https://www.walmart.com/ip/3794684910</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal </th>
+                        <tr>
+                            <th scope="row">Seasonal </th>
                             <td>Holiday Time 30&quot; Christmas Wrapping Paper, Snowmen, Stripes, Candy Canes and Festive Script with Cutlines (120 Sq. ft., 4-Roll)</td>
                             <td>$5.48 </td>
                             <td>$5.48 </td>
                             <td>0%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/3809810531">https://www.walmart.com/ip/3809810531</a></td>
+                            <td><a href="https://www.walmart.com/ip/3809810531">https://www.walmart.com/ip/3809810531</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Seasonal </th>
+                        <tr>
+                            <th scope="row">Seasonal </th>
                             <td>Modern Merry Multi-Pack Premium Wrapping Paper, Christmas, FSC Paper, 30&quot;, 120 sq ft, by Holiday Time</td>
                             <td>$5.48 </td>
                             <td>$5.48 </td>
                             <td>0%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/2436519366">https://www.walmart.com/ip/2436519366</a></td>
+                            <td><a href="https://www.walmart.com/ip/2436519366">https://www.walmart.com/ip/2436519366</a></td>
                         </tr>
-                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">COOK &amp; DINE</th>
+                        <tr>
+                            <th scope="row">COOK &amp; DINE</th>
                             <td>Hamilton Beach Slow Cooker, 6 Quart Capacity, Large Capacity, Serves 7+, Dishwasher-Safe Removable Crock, Red, 33666</td>
                             <td>$11.00 </td>
                             <td>$20.96 </td>
                             <td>91%</td>
                             <td></td>
                             <td></td>
-                            <td><a class="text-purple-500 hover:text-purple-600 transition" href="https://www.walmart.com/ip/305203053">https://www.walmart.com/ip/305203053</a></td>
+                            <td><a href="https://www.walmart.com/ip/305203053">https://www.walmart.com/ip/305203053</a></td>
                         </tr>
                     </tbody>
                 </table>
