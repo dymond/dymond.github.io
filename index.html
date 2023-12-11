@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>I DON’T WANT TO HEAR ANYMORE ABOUT TABLES</title>
 	<script src="https://cdn.tailwindcss.com"></script>
+    <script src="/sortable.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -56,7 +57,7 @@
     <div>
         <div class="container sm:py-16 sm:px-6 relative">
             <div class="relative max-h-screen sm:max-h-[calc(100vh_-_8rem)] overflow-x-auto">
-                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" data-sortable>
                     <thead class="sticky top-0 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col">Category</th>
