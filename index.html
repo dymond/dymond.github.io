@@ -22,7 +22,10 @@
                 @apply text-purple-500 hover:text-purple-600 transition;
             }
             thead th {
-                @apply whitespace-nowrap cursor-pointer;
+                @apply whitespace-nowrap;
+            }
+            thead th:not([data-sortable="false"]) {
+                @apply cursor-pointer;
             }
             thead th[data-sorted="true"] svg {
                 @apply text-green-500;
