@@ -22,7 +22,10 @@
                 @apply text-purple-500 hover:text-purple-600 transition;
             }
             thead th {
-                @apply px-6 py-3;
+                @apply px-6 py-3 cursor-pointer;
+            }
+            thead th[data-sorted="true"] svg {
+                @apply text-green-500;
             }
             thead th:hover svg{
                 @apply text-purple-500;
