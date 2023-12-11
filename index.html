@@ -27,11 +27,11 @@
             thead th:not(.no-sort) {
                 @apply cursor-pointer;
             }
-            thead th[aria-sort="descending"] svg, thead th[aria-sort="ascending"] svg {
-                @apply text-green-500;
-            }
             thead th:hover svg {
                 @apply text-purple-500;
+            }
+            thead th[aria-sort="descending"] svg, thead th[aria-sort="ascending"] svg {
+                @apply text-green-500;
             }
             tbody tr {
                 @apply odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600;
